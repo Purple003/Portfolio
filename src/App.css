@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+/* ===== Page générale ===== */
+body {
+    background: #f5faff; /* bleu pastel */
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ===== Conteneur principal ===== */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #d7e7ff;  /* contour pastel */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ===== Titre ===== */
+h1 {
+    text-align: center;
+    color: #3366cc;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ===== Formulaire ===== */
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-form input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #bcd2f0;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-form input:focus {
+    outline: none;
+    border-color: #88aef2;
+}
+
+.todo-form button {
+    padding: 12px 18px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.todo-form button:hover {
+    background: #3b7dc5;
+}
+
+/* ===== Liste ===== */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* ===== Élément de tâche ===== */
+.todo-item {
+    display: flex;
+    align-items: center;
+    background: #f0f6ff;
+    border: 2px solid #d7e7ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.todo-item span {
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Lorsque la tâche est terminée */
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #7a8aaa;
+}
+
+/* Case à cocher scolaire */
+.todo-item input[type="checkbox"] {
+    transform: scale(1.4);
+    accent-color: #4a90e2;
+}
+
+/* ===== Bouton supprimer ===== */
+.btn-delete {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background: #d95353;
 }
