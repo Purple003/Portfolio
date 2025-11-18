@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Portfolio Aya Arroche
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio professionnel développé avec React 18, TypeScript, Vite et Tailwind CSS.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+```bash
+npm install
+```
 
-### `npm start`
+## Scripts disponibles
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `npm run dev` - Lance le serveur de développement (http://localhost:5173)
+- `npm run build` - Construit l'application pour la production
+- `npm run preview` - Prévisualise le build de production
+- `npm run lint` - Vérifie le code avec ESLint
+- `npm run format` - Formate le code avec Prettier
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Structure du projet
 
-### `npm test`
+```
+src/
+├── app/
+│   ├── router.tsx       # Configuration des routes
+│   └── RootLayout.tsx   # Layout principal (header/footer)
+├── components/
+│   ├── CertificationCard.tsx
+│   └── ThemeToggle.tsx
+├── data/
+│   ├── profile.ts       # Informations personnelles
+│   ├── projects.ts      # Liste des projets
+│   ├── education.ts     # Formations
+│   ├── certifications.ts # Certifications
+│   └── experience.ts    # Expérience professionnelle
+├── pages/
+│   ├── Home.tsx
+│   ├── Projects.tsx
+│   ├── Experience.tsx
+│   ├── Education.tsx
+│   ├── Certifications.tsx
+│   └── Contact.tsx
+├── index.css
+└── main.tsx
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Personnalisation
 
-### `npm run build`
+Modifiez les fichiers dans `src/data/` pour personnaliser votre contenu :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `profile.ts` - Nom, rôle, email, compétences, réseaux sociaux
+- `projects.ts` - Liste de vos projets
+- `education.ts` - Formations et diplômes
+- `certifications.ts` - Certifications professionnelles
+- `experience.ts` - Expérience professionnelle
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Images
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Photo de profil : Placez `photo.webp` ou `photo.jpg` dans `public/`
+- Images de certifications : Placez les badges dans `public/certs/` (format WebP recommandé)
 
-### `npm run eject`
+## Déploiement
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Le projet est prêt pour le déploiement sur Vercel :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Connectez votre dépôt GitHub à Vercel
+2. Vercel détectera automatiquement Vite
+3. Le site sera déployé automatiquement à chaque push
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies utilisées
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS v3
+- React Router v6
+- React Helmet Async (SEO)
+- Framer Motion
 
-## Learn More
+## Démo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Le site est accessible en ligne après déploiement sur Vercel.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Pour tester localement :
+1. Installez les dépendances : `npm install`
+2. Lancez le serveur : `npm run dev`
+3. Ouvrez http://localhost:5173 dans votre navigateur
 
-### Code Splitting
+## Auteur
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Aya Arroche
+Master en Ingénierie Didactique, option Technologies Émergentes en Éducation
+ENS Marrakech
