@@ -17,31 +17,7 @@ npm install
 - `npm run format` - Formate le code avec Prettier
 
 ## Structure du projet
-
-```
-src/
-├── app/
-│   ├── router.tsx       # Configuration des routes
-│   └── RootLayout.tsx   # Layout principal (header/footer)
-├── components/
-│   ├── CertificationCard.tsx
-│   └── ThemeToggle.tsx
-├── data/
-│   ├── profile.ts       # Informations personnelles
-│   ├── projects.ts      # Liste des projets
-│   ├── education.ts     # Formations
-│   ├── certifications.ts # Certifications
-│   └── experience.ts    # Expérience professionnelle
-├── pages/
-│   ├── Home.tsx
-│   ├── Projects.tsx
-│   ├── Experience.tsx
-│   ├── Education.tsx
-│   ├── Certifications.tsx
-│   └── Contact.tsx
-├── index.css
-└── main.tsx
-```
+<img width="654" height="728" alt="image" src="https://github.com/user-attachments/assets/0edfda61-3e74-4562-b8b3-ae469fb19c16" />
 
 ## Personnalisation
 
@@ -78,7 +54,10 @@ Le projet est prêt pour le déploiement sur Vercel :
 
 ## Démo
 
-Le site est accessible en ligne après déploiement sur Vercel.
+https://github.com/user-attachments/assets/98219517-a728-4802-94b2-ba1d08444344
+
+
+
 
 Pour tester localement :
 1. Installez les dépendances : `npm install`
