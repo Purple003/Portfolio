@@ -14,25 +14,25 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
-    title: "Certification Professionnelle en Programmation Java – Fondamentaux et Concepts Avancés",
-    issuer: "ENS Marrakech",
+    title: "Développement Front-End moderne avec React",
+    issuer: "MLIAEdu",
     issueDate: "2024-01",
-    credentialUrl: "https://www.linkedin.com/in/aya-arroche-215a712b0/",
-    skills: ["Java", "Programmation Orientée Objet", "Concepts Avancés"],
-    tags: ["Java", "Programmation", "Master TEE"],
+    credentialUrl: "https://mliaedu.toubkalit.com/verify-certificate/26-01069d32-708e-4b90-ae1c-f321f60a7abf-091763",
+    skills: ["React", "Front-End", "Développement Web"],
+    tags: ["React", "Front-End", "Web"],
     image: "/certs/certif1.webp",
-    imageAlt: "Certification Professionnelle en Programmation Java",
+    imageAlt: "Certification Développement Front-End moderne avec React",
     status: "active"
   },
   {
-    title: "Certification Professionnelle en Hibernate",
-    issuer: "ENS Marrakech",
+    title: "Hibernate & JPA",
+    issuer: "MLIAEdu",
     issueDate: "2024-01",
-    credentialUrl: "https://www.linkedin.com/in/aya-arroche-215a712b0/",
+    credentialUrl: "https://mliaedu.toubkalit.com/verify-certificate/28-01069d32-708e-4b90-ae1c-f321f60a7abf-341612",
     skills: ["Hibernate", "JPA", "Développement", "Ingénierie Logicielle"],
-    tags: ["Hibernate", "JPA", "Base de données", "Master TEE"],
+    tags: ["Hibernate", "JPA", "Base de données"],
     image: "/certs/certif2.webp",
-    imageAlt: "Certification Professionnelle en Hibernate",
+    imageAlt: "Certification Hibernate & JPA",
     status: "active"
   }
 ];

@@ -30,6 +30,20 @@ export const projects: Project[] = [
     tags: ["Unity", "C#", "3D", "Education"],
     summary: "Jeu éducatif 3D interactif développé avec Unity pour aider les étudiants à visualiser et comprendre les concepts de géométrie de manière ludique et intuitive.",
     repo: "https://github.com/Purple003/3D-Educational-Game-Interactive-Geometry-with-Unity"
+  },
+  {
+    title: "TP React – ToDoList Scolaire",
+    period: "2024",
+    tags: ["React", "JavaScript", "CSS"],
+    summary: "Application ToDoList interactive avec React. L'utilisateur peut ajouter, afficher, marquer comme terminée et supprimer des tâches. Le style est clair et épuré, adapté à un usage scolaire.",
+    repo: "https://github.com/Purple003/To-Do-List-interactive"
+  },
+  {
+    title: "Simple Electric Circuit (Unity 3D)",
+    period: "2024",
+    tags: ["Unity", "C#", "3D", "Simulation"],
+    summary: "Projet Unity 3D pour débutants qui simule un circuit électrique de base avec une batterie, une ampoule et un fil. Simulation réaliste du comportement du circuit avec résistance et intensité lumineuse ajustables.",
+    repo: "https://github.com/Purple003/3D-electrical-circuit-simulation"
   }
 ];
 
