@@ -3,17 +3,26 @@ import ThemeToggle from "@/components/ThemeToggle";
 
 export default function RootLayout() {
   return (
-    <div className="min-h-dvh bg-background text-foreground">
-      <header className="sticky top-0 border-b backdrop-blur bg-background/80 z-10">
-        <nav className="mx-auto max-w-6xl flex items-center justify-between p-4">
-          <NavLink to="/" className="font-bold text-lg">
-            MonPortfolio
+    <div className="min-h-dvh bg-background text-foreground antialiased">
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+        <nav className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
+          <NavLink 
+            to="/" 
+            className="font-bold text-xl tracking-tight hover:opacity-80 transition-opacity"
+          >
+            <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+              Aya Arroche
+            </span>
           </NavLink>
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-6">
             <NavLink
               to="/projects"
               className={({ isActive }) =>
-                isActive ? "underline font-medium" : "hover:underline"
+                `text-sm font-semibold transition-all duration-200 ${
+                  isActive 
+                    ? "text-purple-600 dark:text-purple-400" 
+                    : "text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
+                }`
               }
             >
               Projets
@@ -21,7 +30,11 @@ export default function RootLayout() {
             <NavLink
               to="/experience"
               className={({ isActive }) =>
-                isActive ? "underline font-medium" : "hover:underline"
+                `text-sm font-semibold transition-all duration-200 ${
+                  isActive 
+                    ? "text-purple-600 dark:text-purple-400" 
+                    : "text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
+                }`
               }
             >
               Expérience
@@ -29,7 +42,11 @@ export default function RootLayout() {
             <NavLink
               to="/education"
               className={({ isActive }) =>
-                isActive ? "underline font-medium" : "hover:underline"
+                `text-sm font-semibold transition-all duration-200 ${
+                  isActive 
+                    ? "text-purple-600 dark:text-purple-400" 
+                    : "text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
+                }`
               }
             >
               Formations
@@ -37,7 +54,11 @@ export default function RootLayout() {
             <NavLink
               to="/certifications"
               className={({ isActive }) =>
-                isActive ? "underline font-medium" : "hover:underline"
+                `text-sm font-semibold transition-all duration-200 ${
+                  isActive 
+                    ? "text-purple-600 dark:text-purple-400" 
+                    : "text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
+                }`
               }
             >
               Certifications
@@ -45,20 +66,31 @@ export default function RootLayout() {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? "underline font-medium" : "hover:underline"
+                `text-sm font-semibold transition-all duration-200 ${
+                  isActive 
+                    ? "text-purple-600 dark:text-purple-400" 
+                    : "text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400"
+                }`
               }
             >
               Contact
             </NavLink>
             <ThemeToggle />
           </div>
+          <div className="md:hidden">
+            <ThemeToggle />
+          </div>
         </nav>
       </header>
-      <main className="mx-auto max-w-6xl p-6">
+      <main className="mx-auto max-w-7xl px-6 py-12">
         <Outlet />
       </main>
-      <footer className="border-t py-6 text-center text-sm text-muted-foreground mt-12">
-        © {new Date().getFullYear()} • Aya Arroche
+      <footer className="border-t border-border/50 mt-20 py-8">
+        <div className="mx-auto max-w-7xl px-6 text-center">
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Aya Arroche. Tous droits réservés.
+          </p>
+        </div>
       </footer>
     </div>
   );

@@ -14,11 +14,13 @@ export default function ThemeToggle() {
 
   return (
     <button
-      className="border rounded-xl px-3 py-2 hover:bg-muted transition-colors"
+      className="relative p-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl"
       onClick={() => setDark(!dark)}
       aria-label="Basculer le thème"
     >
-      {dark ? "☀️ Light" : "🌙 Dark"}
+      <span className="text-white text-lg">
+        {dark ? "☀️" : "🌙"}
+      </span>
     </button>
   );
 }
