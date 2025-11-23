@@ -56,7 +56,10 @@ Le projet est prêt pour le déploiement sur Vercel :
 
 ## Démo
 
-https://github.com/user-attachments/assets/98219517-a728-4802-94b2-ba1d08444344
+
+
+
+https://github.com/user-attachments/assets/74c930b3-3785-431b-9e84-5986231c5d81
 
 
 
