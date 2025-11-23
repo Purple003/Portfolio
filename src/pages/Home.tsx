@@ -102,11 +102,11 @@ export default function Home() {
               >
                 <span className="block relative">
                   <span className="bg-gradient-to-r from-purple-600 via-pink-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_ease_infinite]">
-                    MonPortfolio
+                    Arroche Aya
                   </span>
                   {/* Subtle text shadow for depth */}
                   <span className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-pink-600/20 via-blue-600/20 to-indigo-600/20 bg-clip-text text-transparent blur-xl -z-10">
-                    MonPortfolio
+                    Arroche Aya
                   </span>
                 </span>
               </motion.h1>
@@ -216,78 +216,112 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* Premium Right Image */}
+            {/* Premium Professional Image */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
               className="relative flex justify-center items-center"
             >
-              <div className="relative w-full max-w-[520px]">
-                {/* Premium Glowing Background Layers */}
+              <div className="relative w-full max-w-[560px]">
+                {/* Professional Multi-Layer Glow Effect */}
                 <motion.div
                   animate={{
-                    scale: [1, 1.05, 1],
-                    opacity: [0.25, 0.35, 0.25],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                  className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-[3.5rem] blur-3xl"
-                />
-                <motion.div
-                  animate={{
-                    scale: [1.05, 1, 1.05],
-                    opacity: [0.15, 0.25, 0.15],
+                    scale: [1, 1.08, 1],
+                    opacity: [0.3, 0.4, 0.3],
                   }}
                   transition={{
                     duration: 5,
                     repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  className="absolute inset-0 bg-gradient-to-r from-purple-500/40 via-pink-500/40 to-blue-500/40 rounded-[4rem] blur-3xl"
+                />
+                <motion.div
+                  animate={{
+                    scale: [1.08, 1, 1.08],
+                    opacity: [0.2, 0.3, 0.2],
+                  }}
+                  transition={{
+                    duration: 6,
+                    repeat: Infinity,
                     ease: "easeInOut",
                     delay: 0.5
                   }}
-                  className="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-[3.5rem] blur-3xl"
+                  className="absolute inset-0 bg-gradient-to-r from-blue-500/30 via-indigo-500/30 to-purple-500/30 rounded-[4rem] blur-3xl"
+                />
+                <motion.div
+                  animate={{
+                    scale: [1, 1.05, 1],
+                    opacity: [0.15, 0.25, 0.15],
+                  }}
+                  transition={{
+                    duration: 7,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
+                  className="absolute inset-0 bg-gradient-to-r from-rose-500/20 via-pink-500/20 to-purple-500/20 rounded-[4rem] blur-3xl"
                 />
                 
-                {/* Premium Image Container */}
+                {/* Professional Image Frame with Elegant Border */}
                 <motion.div
-                  whileHover={{ scale: 1.03, rotate: 1 }}
-                  transition={{ duration: 0.4, ease: "easeOut" }}
-                  className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-[3px] border-white/90 dark:border-gray-800/90 backdrop-blur-sm"
+                  whileHover={{ scale: 1.02, rotate: 0.5 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="relative group"
                 >
-                  {/* Premium Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-purple-600/10 via-transparent to-transparent z-10" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-pink-600/5 z-10" />
+                  {/* Outer Elegant Frame */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-600 via-blue-600 to-indigo-600 rounded-[4rem] opacity-75 group-hover:opacity-100 blur-sm transition-opacity duration-500" />
                   
-                  {/* Image */}
-                  <img
-                    src={profile.photo || "/photo.jpg"}
-                    alt={`Photo de profil de ${profile.name}`}
-                    className="w-full h-auto object-cover relative z-0"
-                    width={520}
-                    height={520}
-                  />
+                  {/* Middle Frame Layer */}
+                  <div className="absolute -inset-0.5 bg-white dark:bg-gray-900 rounded-[4rem]" />
                   
-                  {/* Premium Border Glow */}
-                  <div className="absolute inset-0 rounded-[3.5rem] bg-gradient-to-r from-purple-600/0 via-pink-600/0 to-blue-600/0 hover:from-purple-600/20 hover:via-pink-600/20 hover:to-blue-600/20 transition-all duration-500 pointer-events-none z-20" />
+                  {/* Premium Image Container */}
+                  <div className="relative rounded-[4rem] overflow-hidden shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] border-4 border-white/95 dark:border-gray-800/95 backdrop-blur-sm">
+                    {/* Professional Lighting Effects */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-purple-600/8 z-10" />
+                    <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/20 via-transparent to-transparent z-10" />
+                    
+                    {/* Professional Image with Enhanced Quality */}
+                    <img
+                      src={profile.photo || "/photo.jpg"}
+                      alt={`Photo de profil de ${profile.name}`}
+                      className="w-full h-auto object-cover relative z-0 grayscale-0 brightness-105 contrast-105 saturate-110"
+                      width={560}
+                      height={560}
+                      style={{
+                        filter: 'brightness(1.05) contrast(1.05) saturate(1.1)',
+                      }}
+                    />
+                    
+                    {/* Elegant Border Glow on Hover */}
+                    <div className="absolute inset-0 rounded-[4rem] bg-gradient-to-r from-purple-600/0 via-pink-600/0 to-blue-600/0 group-hover:from-purple-600/30 group-hover:via-pink-600/30 group-hover:to-blue-600/30 transition-all duration-700 pointer-events-none z-20" />
+                    
+                    {/* Professional Shine Effect */}
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"
+                      initial={{ x: "-100%" }}
+                      whileHover={{ x: "100%" }}
+                      transition={{ duration: 0.8 }}
+                    />
+                  </div>
                 </motion.div>
 
-                {/* Premium Floating Badges */}
+                {/* Professional Floating Badges with Enhanced Design */}
                 <motion.div
-                  animate={{ y: [0, -12, 0], rotate: [0, 2, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -top-8 -right-8 bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 text-white px-5 py-2.5 rounded-full shadow-2xl font-bold text-sm backdrop-blur-md border border-white/20"
+                  animate={{ y: [0, -15, 0], rotate: [0, 3, 0] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute -top-10 -right-10 bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 text-white px-6 py-3 rounded-full shadow-[0_20px_25px_-5px_rgba(0,0,0,0.3)] font-bold text-sm backdrop-blur-xl border-2 border-white/30"
                 >
-                  Master TEE
+                  <span className="drop-shadow-lg">Master TEE</span>
                 </motion.div>
                 <motion.div
-                  animate={{ y: [0, 12, 0], rotate: [0, -2, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                  className="absolute -bottom-8 -left-8 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-5 py-2.5 rounded-full shadow-2xl font-bold text-sm backdrop-blur-md border border-white/20"
+                  animate={{ y: [0, 15, 0], rotate: [0, -3, 0] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                  className="absolute -bottom-10 -left-10 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-6 py-3 rounded-full shadow-[0_20px_25px_-5px_rgba(0,0,0,0.3)] font-bold text-sm backdrop-blur-xl border-2 border-white/30"
                 >
-                  Licence Info
+                  <span className="drop-shadow-lg">Licence Info</span>
                 </motion.div>
               </div>
             </motion.div>
