@@ -53,7 +53,7 @@ export default function Home() {
 
       <section className="relative min-h-screen flex items-center py-20 px-4">
         <Helmet>
-          <title>{profile.name} — Portfolio</title>
+          <title>Portfolio — Accueil</title>
           <meta
             name="description"
             content="Portfolio : IA, SIG, DevSecOps, Android."
@@ -87,10 +87,7 @@ export default function Home() {
                 className="text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight"
               >
                 <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-                  {profile.name.split(' ')[0]}
-                </span>
-                <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  {profile.name.split(' ')[1]}
+                  MonPortfolio
                 </span>
               </motion.h1>
 

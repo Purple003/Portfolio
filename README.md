@@ -1,4 +1,4 @@
-# Portfolio Aya Arroche
+# Portfolio
 
 Portfolio professionnel développé avec React 18, TypeScript, Vite et Tailwind CSS.
  - le lein vercel
@@ -68,6 +68,4 @@ Pour tester localement :
 
 ## Auteur
 
-Aya Arroche
-Master en Ingénierie Didactique, option Technologies Émergentes en Éducation
-ENS Marrakech
+Portfolio

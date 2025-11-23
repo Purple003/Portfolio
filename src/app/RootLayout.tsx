@@ -11,7 +11,7 @@ export default function RootLayout() {
             className="font-bold text-xl tracking-tight hover:opacity-80 transition-opacity"
           >
             <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-              Aya Arroche
+              Portfolio
             </span>
           </NavLink>
           <div className="hidden md:flex items-center gap-6">
@@ -88,7 +88,7 @@ export default function RootLayout() {
       <footer className="border-t border-border/50 mt-20 py-8">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Aya Arroche. Tous droits réservés.
+            © {new Date().getFullYear()} Portfolio. Tous droits réservés.
           </p>
         </div>
       </footer>

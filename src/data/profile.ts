@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Aya Arroche",
+  name: "Portfolio",
   role: "Master's degree in Educational Engineering on Emerging Technologies in Education",
   location: "Marrakech, Maroc",
   email: "arrocheaya@gmail.com",
