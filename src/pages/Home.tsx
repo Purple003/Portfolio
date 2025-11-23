@@ -223,7 +223,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
               className="relative flex justify-center items-center"
             >
-              <div className="relative w-full max-w-[560px]">
+              <div className="relative w-full max-w-[460px]">
                 {/* Professional Multi-Layer Glow Effect */}
                 <motion.div
                   animate={{
@@ -288,8 +288,8 @@ export default function Home() {
                       src={profile.photo || "/photo.jpg"}
                       alt={`Photo de profil de ${profile.name}`}
                       className="w-full h-auto object-cover relative z-0 grayscale-0 brightness-105 contrast-105 saturate-110"
-                      width={560}
-                      height={560}
+                      width={460}
+                      height={460}
                       style={{
                         filter: 'brightness(1.05) contrast(1.05) saturate(1.1)',
                       }}
@@ -310,16 +310,16 @@ export default function Home() {
 
                 {/* Professional Floating Badges with Enhanced Design */}
                 <motion.div
-                  animate={{ y: [0, -15, 0], rotate: [0, 3, 0] }}
+                  animate={{ y: [0, -12, 0], rotate: [0, 3, 0] }}
                   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -top-10 -right-10 bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 text-white px-6 py-3 rounded-full shadow-[0_20px_25px_-5px_rgba(0,0,0,0.3)] font-bold text-sm backdrop-blur-xl border-2 border-white/30"
+                  className="absolute -top-8 -right-8 bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 text-white px-5 py-2.5 rounded-full shadow-[0_20px_25px_-5px_rgba(0,0,0,0.3)] font-bold text-sm backdrop-blur-xl border-2 border-white/30"
                 >
                   <span className="drop-shadow-lg">Master TEE</span>
                 </motion.div>
                 <motion.div
-                  animate={{ y: [0, 15, 0], rotate: [0, -3, 0] }}
+                  animate={{ y: [0, 12, 0], rotate: [0, -3, 0] }}
                   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                  className="absolute -bottom-10 -left-10 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-6 py-3 rounded-full shadow-[0_20px_25px_-5px_rgba(0,0,0,0.3)] font-bold text-sm backdrop-blur-xl border-2 border-white/30"
+                  className="absolute -bottom-8 -left-8 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-5 py-2.5 rounded-full shadow-[0_20px_25px_-5px_rgba(0,0,0,0.3)] font-bold text-sm backdrop-blur-xl border-2 border-white/30"
                 >
                   <span className="drop-shadow-lg">Licence Info</span>
                 </motion.div>
