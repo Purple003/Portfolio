@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import { Play, X, Github } from 'lucide-react';
 import { EduForge } from './EduForge';
 
-
 export const SecondaryProjects: React.FC = () => {
   const [activeVideoUrl, setActiveVideoUrl] = useState<string | null>(null);
-  const [showEduForge, setShowEduForge] = useState(false);
 
   const projects = [
+    {
+      title: 'StatLabAI — Integrated Statistical Analysis Platform',
+      period: '',
+      tags: ['React', 'Spring Boot', 'FastAPI', 'PostgreSQL', 'Kafka', 'scikit-learn', 'Docker'],
+      description:
+        'A microservices platform that unifies the statistical analysis pipeline — data import, automated cleaning, statistical testing, machine learning, and report generation — with AI-guided recommendations for non-expert users. Co-developed with Yasmine Ettouyjer.',
+      githubUrl: 'https://github.com/Purple003/StatlabIA-Last',
+      demoUrl: null,
+    },
     {
       title: 'Microservices Architecture & DevOps Pipeline',
       period: '2026',
@@ -25,15 +32,6 @@ export const SecondaryProjects: React.FC = () => {
         '3D animal recognition game for immersive, interactive learning. Aya Arroche built and contributed the Unity implementation and core gameplay.',
       githubUrl: 'https://github.com/Purple003/3D-Educational-Game-Interactive-Geometry-with-Unity',
       demoUrl: 'https://youtu.be/2HNeW8yBdEg',
-    },
-    {
-      title: 'EduForge – Interactive Learning Platform',
-      period: '2026',
-      tags: ['Unity', 'FastAPI', 'PostgreSQL', 'MediaPipe', 'LangChain', 'XR'],
-      description:
-        'Full‑stack learning platform integrating Unity XR experiences with adaptive backend services.',
-      githubUrl: 'https://github.com/Purple003',
-      demoUrl: null,
     },
     {
       title: 'PizzaRecipes (Android App)',
@@ -59,6 +57,10 @@ export const SecondaryProjects: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {/* EduForge expanded case study as first item */}
+          <div className="col-span-1 md:col-span-2 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/40 p-5 overflow-y-auto max-h-[90vh]">
+            <EduForge />
+          </div>
           {projects.map((project) => (
             <div
               key={project.title}
@@ -113,69 +115,38 @@ export const SecondaryProjects: React.FC = () => {
                       <span>Watch Demo</span>
                     </button>
                   )}
-
-                  {project.title.includes('EduForge') && (
-                    <button
-                      type="button"
-                      onClick={() => setShowEduForge(true)}
-                      className="inline-flex items-center space-x-1 font-medium text-[var(--color-accent)] hover:underline"
-                    >
-                      <span>Details</span>
-                    </button>
-                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Video Player Modal */}
         {activeVideoUrl && (
-  <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-    <div className="relative w-full max-w-2xl bg-zinc-900 rounded-lg overflow-hidden border border-zinc-700 shadow-xl">
-      <div className="flex items-center justify-between p-3 border-b border-zinc-800">
-        <span className="text-xs font-medium text-zinc-300">Project Demo Video</span>
-        <button
-          type="button"
-          onClick={() => setActiveVideoUrl(null)}
-          className="p-1 rounded text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 transition-colors"
-          aria-label="Close modal"
-        >
-          <X className="w-4 h-4" />
-        </button>
-      </div>
-      <div className="relative aspect-video w-full">
-        <iframe
-          src={activeVideoUrl}
-          title="Demo Video"
-          className="w-full h-full border-0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
-    </div>
-  </div>
-) }
-{showEduForge && (
-  <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-    <div className="relative w-full max-w-4xl bg-white dark:bg-zinc-900 rounded-lg overflow-y-auto max-h-[90vh] border border-zinc-700 shadow-xl">
-      <div className="flex items-center justify-between p-3 border-b border-zinc-800">
-        <span className="text-xs font-medium text-zinc-300">EduForge – Interactive Learning Platform</span>
-        <button
-          type="button"
-          onClick={() => setShowEduForge(false)}
-          className="p-1 rounded text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 transition-colors"
-          aria-label="Close modal"
-        >
-          <X className="w-4 h-4" />
-        </button>
-      </div>
-      <div className="p-4">
-        <EduForge />
-      </div>
-    </div>
-  </div>
-)}
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+            <div className="relative w-full max-w-2xl bg-zinc-900 rounded-lg overflow-hidden border border-zinc-700 shadow-xl">
+              <div className="flex items-center justify-between p-3 border-b border-zinc-800">
+                <span className="text-xs font-medium text-zinc-300">Project Demo Video</span>
+                <button
+                  type="button"
+                  onClick={() => setActiveVideoUrl(null)}
+                  className="p-1 rounded text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 transition-colors"
+                  aria-label="Close modal"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+              <div className="relative aspect-video w-full">
+                <iframe
+                  src={activeVideoUrl}
+                  title="Demo Video"
+                  className="w-full h-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
