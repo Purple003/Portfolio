@@ -1,43 +1,33 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { useLanguage } from "./i18n/LanguageContext";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Timeline from "./components/Timeline";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import React from 'react';
+import { ThemeProvider } from './context/ThemeContext';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { EduForge } from './components/EduForge';
+import { SecondaryProjects } from './components/SecondaryProjects';
+import { Experience } from './components/Experience';
+import { Skills } from './components/Skills';
+import { About } from './components/About';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
 
-export default function App() {
-    const { lang } = useLanguage();
+export const App: React.FC = () => {
+  return (
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-[#09090b] text-zinc-900 dark:text-zinc-100 selection:bg-[var(--color-accent)] selection:text-white transition-colors duration-200">
+        <Header />
+        <main className="max-w-4xl mx-auto px-4 sm:px-6">
+          <Hero />
+          <EduForge />
+          <SecondaryProjects />
+          <Experience />
+          <Skills />
+          <About />
+          <Contact />
+          <Footer />
+        </main>
+      </div>
+    </ThemeProvider>
+  );
+};
 
-    return (
-        <HelmetProvider>
-            <Helmet>
-                <html lang={lang} />
-                <title>Aya Arroche | Developer &amp; Educational Engineer</title>
-                <meta
-                    name="description"
-                    content="Portfolio of Aya Arroche — Developer & Educational Engineer specializing in Unity, VR/AR, AI/LLM, and full-stack web development."
-                />
-                <meta name="author" content="Aya Arroche" />
-                <meta name="theme-color" content="#7C9FE8" />
-                <meta property="og:title" content="Aya Arroche | Developer & Educational Engineer" />
-                <meta property="og:description" content="Developer specializing in Unity, VR/AR, AI/LLM, and full-stack web development." />
-                <meta property="og:type" content="website" />
-            </Helmet>
-
-            <Navbar />
-            <main>
-                <Hero />
-                <About />
-                <Skills />
-                <Projects />
-                <Timeline />
-                <Contact />
-            </main>
-            <Footer />
-        </HelmetProvider>
-    );
-}
+export default App;

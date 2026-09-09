@@ -1,59 +1,155 @@
-import { motion } from "framer-motion";
-import { useLanguage } from "../i18n/LanguageContext";
-import { translations } from "../i18n/translations";
-import { skillCategories } from "../data/skills";
-import { SectionTitle } from "./About";
+import React from 'react';
+import { Award, Globe } from 'lucide-react';
 
-export default function Skills() {
-    const { lang } = useLanguage();
-    const t = translations[lang];
+export const Skills: React.FC = () => {
+  const technicalSkills = [
+    {
+      category: 'XR & Emerging Tech',
+      items: [
+        'Unity XR/VR Development',
+        'MediaPipe (Computer Vision)',
+        'Real-time Sensor Interaction',
+        'Immersive Simulation Design',
+      ],
+    },
+    {
+      category: 'Game Dev & AI',
+      items: [
+        'Unity (C#)',
+        'Gameplay Programming',
+        'WebGL',
+        'Android (Java)',
+        'LangChain',
+        'LLM Integration',
+        'Machine Learning',
+      ],
+    },
+    {
+      category: 'Backend & APIs',
+      items: [
+        'FastAPI',
+        'Flask',
+        'Spring Boot',
+        'REST APIs',
+        'WebSocket',
+        'Microservices',
+        'RabbitMQ',
+      ],
+    },
+    {
+      category: 'DevOps & Cloud',
+      items: [
+        'Docker',
+        'Docker Compose',
+        'Jenkins',
+        'GitHub Actions',
+        'SonarQube',
+        'CI/CD Pipelines',
+      ],
+    },
+    {
+      category: 'Databases & Tools',
+      items: [
+        'PostgreSQL',
+        'MySQL',
+        'Git',
+        'GitHub',
+        'VS Code',
+        'Android Studio',
+      ],
+    },
+  ];
 
-    return (
-        <section id="skills" className="py-24">
-            <div className="max-w-6xl mx-auto px-6">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <SectionTitle title={t.skills.title} />
+  const certifications = [
+    'NLP in Python',
+    'Front-End Dev with React',
+    'React Native',
+    'Java Advanced',
+    'Hibernate & JPA',
+  ];
 
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
-                        {skillCategories.map((cat, catIdx) => (
-                            <motion.div
-                                key={cat.key}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: catIdx * 0.08, duration: 0.5 }}
-                                className="group p-5 rounded-2xl bg-white dark:bg-slate-800 
-                           border border-slate-200/60 dark:border-slate-700/50
-                           hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5
-                           transition-all duration-300"
-                            >
-                                <h3 className="text-sm font-semibold text-accent mb-4 uppercase tracking-wider">
-                                    {t.skills.categories[cat.key as keyof typeof t.skills.categories]}
-                                </h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {cat.skills.map((skill) => (
-                                        <span
-                                            key={skill}
-                                            className="text-xs px-2.5 py-1.5 rounded-lg 
-                                 bg-slate-100 dark:bg-slate-700/60 
-                                 text-slate-700 dark:text-slate-300
-                                 group-hover:bg-accent/10 group-hover:text-accent
-                                 transition-colors duration-300"
-                                        >
-                                            {skill}
-                                        </span>
-                                    ))}
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </motion.div>
+  const languages = [
+    { name: 'Arabic', level: 'Native' },
+    { name: 'French', level: 'B2' },
+    { name: 'English', level: 'C1' },
+  ];
+
+  return (
+    <section id="skills" className="py-12 sm:py-16 border-b border-zinc-200 dark:border-zinc-800 scroll-mt-16">
+      <div className="space-y-8">
+        <div className="space-y-1">
+          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            Technical Skills
+          </h2>
+          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
+            Technical proficiencies directly reflecting professional and academic experience.
+          </p>
+        </div>
+
+        {/* Skills Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {technicalSkills.map((group) => (
+            <div
+              key={group.category}
+              className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/40 space-y-2.5"
+            >
+              <h3 className="text-xs uppercase tracking-wider font-semibold text-zinc-900 dark:text-zinc-200 border-b border-zinc-100 dark:border-zinc-800/80 pb-1.5">
+                {group.category}
+              </h3>
+              <div className="flex flex-wrap gap-1.5">
+                {group.items.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-        </section>
-    );
-}
+          ))}
+        </div>
+
+        {/* Certifications & Languages */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          {/* Certifications */}
+          <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/40 space-y-2.5">
+            <h3 className="text-xs uppercase tracking-wider font-semibold text-zinc-900 dark:text-zinc-200 flex items-center space-x-1.5 border-b border-zinc-100 dark:border-zinc-800/80 pb-1.5">
+              <Award className="w-3.5 h-3.5 text-[var(--color-accent)]" />
+              <span>Certifications</span>
+            </h3>
+            <div className="flex flex-wrap gap-1.5">
+              {certifications.map((cert) => (
+                <span
+                  key={cert}
+                  className="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs font-medium"
+                >
+                  {cert}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Languages */}
+          <div className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/40 space-y-2.5">
+            <h3 className="text-xs uppercase tracking-wider font-semibold text-zinc-900 dark:text-zinc-200 flex items-center space-x-1.5 border-b border-zinc-100 dark:border-zinc-800/80 pb-1.5">
+              <Globe className="w-3.5 h-3.5 text-[var(--color-accent)]" />
+              <span>Languages</span>
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {languages.map((lang) => (
+                <div
+                  key={lang.name}
+                  className="px-3 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs flex items-center space-x-1.5"
+                >
+                  <span className="font-semibold">{lang.name}</span>
+                  <span className="text-zinc-400 dark:text-zinc-500 font-mono">({lang.level})</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
