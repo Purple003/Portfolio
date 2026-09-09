@@ -15,29 +15,11 @@ export const SecondaryProjects: React.FC = () => {
       demoUrl: null,
     },
     {
-      title: 'Urban Simulation & AI Platform',
-      period: '2025',
-      tags: ['Python', 'Flask', 'Machine Learning', 'scikit-learn', 'Data Visualization'],
-      description:
-        'Built an ML-powered urban simulation with a Flask RESTful API, real-time environmental data ingestion, and monitoring dashboards.',
-      githubUrl: 'https://github.com/Purple003',
-      demoUrl: null,
-    },
-    {
-      title: 'Android Applications — PizzaRecipes & Geolocation App',
-      period: '2025',
-      tags: ['Java', 'Android Studio', 'Google Maps SDK', 'DAO/MVC', 'REST API', 'GPS'],
-      description:
-        'Built two Android apps: a recipe app with clean DAO/Service/Adapter architecture, and a GPS/Google-Maps app consuming a REST API in real time.',
-      githubUrl: 'https://github.com/Purple003/PizzaRecipes',
-      demoUrl: null,
-    },
-    {
-      title: 'GuessTheAnimal3D & Interactive 3D Educational Game',
+      title: 'GuessTheAnimal3D',
       period: '2024',
-      tags: ['Unity (C#)', 'Vuforia', 'AR/VR', 'Spatial Interaction'],
+      tags: ['Unity (C#)', 'Vuforia', 'AR/VR', 'Game-Based Learning'],
       description:
-        'Designed immersive VR scenes and Augmented Reality applications for 3D object recognition and interactive learning. Co-developed coursework project.',
+        '3D animal recognition game for immersive, interactive learning. Aya Arroche built and contributed the Unity implementation and core gameplay.',
       githubUrl: 'https://github.com/Purple003/3D-Educational-Game-Interactive-Geometry-with-Unity',
       demoUrl: 'https://youtu.be/2HNeW8yBdEg',
     },

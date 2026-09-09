@@ -19,8 +19,8 @@ export const App: React.FC = () => {
           <Hero />
           <EduForge />
           <SecondaryProjects />
-          <Experience />
           <Skills />
+          <Experience />
           <About />
           <Contact />
           <Footer />

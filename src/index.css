@@ -11,9 +11,9 @@
   --color-text-main: #111827;
   --color-text-muted: #4b5563;
   --color-border: #e5e7eb;
-  --color-accent: #0f766e;
-  --color-accent-hover: #0d655e;
-  --color-accent-subtle: #f0fdfa;
+  --color-accent: #7C3AED;
+  --color-accent-hover: #6D28D9;
+  --color-accent-subtle: #f5f3ff;
 }
 
 .dark {
@@ -22,9 +22,9 @@
   --color-text-main: #f4f4f5;
   --color-text-muted: #9ca3af;
   --color-border: #27272a;
-  --color-accent: #14b8a6;
-  --color-accent-hover: #2dd4bf;
-  --color-accent-subtle: #112826;
+  --color-accent: #8B5CF6;
+  --color-accent-hover: #A78BFA;
+  --color-accent-subtle: #1e1333;
 }
 
 @layer base {

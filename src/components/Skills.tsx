@@ -2,61 +2,21 @@ import React from 'react';
 import { Award, Globe } from 'lucide-react';
 
 export const Skills: React.FC = () => {
-  const technicalSkills = [
+  const skillTiers = [
     {
-      category: 'XR & Emerging Tech',
-      items: [
-        'Unity XR/VR Development',
-        'MediaPipe (Computer Vision)',
-        'Real-time Sensor Interaction',
-        'Immersive Simulation Design',
-      ],
+      tier: 'Core',
+      description: 'Primary focus areas',
+      items: ['Unity', 'C#', 'XR', 'Game Development'],
     },
     {
-      category: 'Game Dev & AI',
-      items: [
-        'Unity (C#)',
-        'Gameplay Programming',
-        'WebGL',
-        'Android (Java)',
-        'LangChain',
-        'LLM Integration',
-        'Machine Learning',
-      ],
+      tier: 'Supporting',
+      description: 'Backend & tooling',
+      items: ['Python', 'FastAPI', 'PostgreSQL', 'Git'],
     },
     {
-      category: 'Backend & APIs',
-      items: [
-        'FastAPI',
-        'Flask',
-        'Spring Boot',
-        'REST APIs',
-        'WebSocket',
-        'Microservices',
-        'RabbitMQ',
-      ],
-    },
-    {
-      category: 'DevOps & Cloud',
-      items: [
-        'Docker',
-        'Docker Compose',
-        'Jenkins',
-        'GitHub Actions',
-        'SonarQube',
-        'CI/CD Pipelines',
-      ],
-    },
-    {
-      category: 'Databases & Tools',
-      items: [
-        'PostgreSQL',
-        'MySQL',
-        'Git',
-        'GitHub',
-        'VS Code',
-        'Android Studio',
-      ],
+      tier: 'Specialized',
+      description: 'Domain-specific expertise',
+      items: ['MediaPipe', 'xAPI', 'LangChain / LLM integration', 'Adaptive systems'],
     },
   ];
 
@@ -79,23 +39,26 @@ export const Skills: React.FC = () => {
       <div className="space-y-8">
         <div className="space-y-1">
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-            Technical Skills
+            Skills &amp; Stack
           </h2>
           <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
-            Technical proficiencies directly reflecting professional and academic experience.
+            Technical proficiencies directly reflecting professional and project experience.
           </p>
         </div>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {technicalSkills.map((group) => (
+        {/* 3-Tier Skills */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {skillTiers.map((group) => (
             <div
-              key={group.category}
-              className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/40 space-y-2.5"
+              key={group.tier}
+              className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/40 space-y-3"
             >
-              <h3 className="text-xs uppercase tracking-wider font-semibold text-zinc-900 dark:text-zinc-200 border-b border-zinc-100 dark:border-zinc-800/80 pb-1.5">
-                {group.category}
-              </h3>
+              <div className="border-b border-zinc-100 dark:border-zinc-800/80 pb-2 space-y-0.5">
+                <h3 className="text-xs uppercase tracking-wider font-bold text-[var(--color-accent)]">
+                  {group.tier}
+                </h3>
+                <p className="text-[11px] text-zinc-500 dark:text-zinc-500">{group.description}</p>
+              </div>
               <div className="flex flex-wrap gap-1.5">
                 {group.items.map((skill) => (
                   <span
@@ -153,3 +116,4 @@ export const Skills: React.FC = () => {
     </section>
   );
 };
+

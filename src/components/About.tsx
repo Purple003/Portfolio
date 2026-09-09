@@ -19,19 +19,16 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="space-y-4 text-sm sm:text-base text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-2xl">
+        <div className="space-y-3 text-sm sm:text-base text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-2xl">
           <p>
-            I am an Emerging Technologies Engineer and Game Developer specialized in XR and AI-driven interactive systems, with a solid software engineering foundation across backend architecture, REST/microservices, and DevOps pipelines.
+            Master&apos;s in Engineering and Emerging Technologies from ENS Marrakech (Université Cadi Ayyad), defended June 2026. Licence in Education (Informatique option) — a dual pedagogical-technical profile that shapes how I approach building for learners.
           </p>
           <p>
-            Experienced in building immersive, adaptive experiences — from real-time Unity/XR gameplay systems to AI pipelines and Dockerized full-stack deployments. My dual technical and educational background enables me to turn complex concepts into structured technical documentation and bridge engineering, design, and AI disciplines.
-          </p>
-          <p>
-            Adaptable and fast-learning, I am motivated to grow within high-impact engineering environments, game development studios, and advanced research labs in HCI and immersive technologies.
+            Based in Marrakech, Morocco. Available for Game Dev, XR, and interactive technology opportunities.
           </p>
         </div>
 
-        {/* Education Timeline Cards */}
+        {/* Education */}
         <div className="pt-2 space-y-3">
           <h3 className="text-xs uppercase tracking-wider font-semibold text-zinc-900 dark:text-zinc-200">
             Education
@@ -47,10 +44,10 @@ export const About: React.FC = () => {
                   </span>
                 </div>
                 <p className="text-xs text-zinc-600 dark:text-zinc-400 pl-5">
-                  UCA – ENS Marrakech
+                  ENS Marrakech — Université Cadi Ayyad · Defended June 2026
                 </p>
               </div>
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 pl-5 sm:pl-0">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 pl-5 sm:pl-0 whitespace-nowrap">
                 2024 – 2026
               </span>
             </div>
@@ -60,14 +57,14 @@ export const About: React.FC = () => {
                 <div className="flex items-center space-x-1.5">
                   <GraduationCap className="w-4 h-4 text-[var(--color-accent)] flex-shrink-0" />
                   <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    Bachelor&apos;s — Computer Science
+                    Licence — Education (Informatique option)
                   </span>
                 </div>
                 <p className="text-xs text-zinc-600 dark:text-zinc-400 pl-5">
-                  UCA – ENS Marrakech
+                  ENS Marrakech — Université Cadi Ayyad
                 </p>
               </div>
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 pl-5 sm:pl-0">
+              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 pl-5 sm:pl-0 whitespace-nowrap">
                 2021 – 2024
               </span>
             </div>
@@ -77,3 +74,4 @@ export const About: React.FC = () => {
     </section>
   );
 };
+

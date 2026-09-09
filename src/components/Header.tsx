@@ -9,8 +9,8 @@ export const Header: React.FC = () => {
   const navLinks = [
     { name: 'EduForge', href: '#eduforge' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Experience', href: '#experience' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
   ];

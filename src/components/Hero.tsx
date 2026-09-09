@@ -19,12 +19,12 @@ export const Hero: React.FC = () => {
               Aya Arroche
             </h1>
             <p className="text-base sm:text-lg font-medium text-[var(--color-accent)]">
-              Emerging Technologies Engineer · XR Developer · AI-Driven Interactive Systems
+              Game Developer · XR &amp; AI-Driven Education
             </p>
           </div>
 
           <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-xl">
-            Specialized in XR and AI-driven interactive systems with a solid software engineering foundation across backend architectures, REST/microservices, and DevOps pipelines. Experienced in building immersive, adaptive experiences — from real-time Unity/XR gameplay systems to AI pipelines and Dockerized deployments.
+            Working at the intersection of game development, XR/immersive technology, and AI-driven education — building adaptive systems that put learners in flow.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -78,7 +78,7 @@ export const Hero: React.FC = () => {
         </div>
 
         <div className="flex-shrink-0">
-          <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800 shadow-sm bg-zinc-100 dark:bg-zinc-800">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden border-2 border-[var(--color-accent)] shadow-md bg-zinc-100 dark:bg-zinc-800">
             <img
               src="/photo.jpg"
               alt="Aya Arroche"

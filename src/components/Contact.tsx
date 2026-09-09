@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Github, FileText, ArrowUpRight, Phone } from 'lucide-react';
+import { Mail, Linkedin, Github, FileText, ArrowUpRight } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const contactLinks = [
@@ -21,12 +21,6 @@ export const Contact: React.FC = () => {
       href: 'https://github.com/Purple003',
       icon: Github,
     },
-    {
-      label: 'Phone',
-      value: '+212 688 479 330',
-      href: 'tel:+212688479330',
-      icon: Phone,
-    },
   ];
 
   return (
@@ -34,10 +28,10 @@ export const Contact: React.FC = () => {
       <div className="space-y-6">
         <div className="space-y-1">
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-            Get in Touch
+            Let&apos;s build immersive experiences.
           </h2>
           <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
-            Open to engineering positions in game development, XR, and HCI, as well as academic PhD inquiries.
+            Available for Game Dev, XR, and interactive technology opportunities.
           </p>
         </div>
 
