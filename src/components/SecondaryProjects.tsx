@@ -23,6 +23,24 @@ export const SecondaryProjects: React.FC = () => {
       githubUrl: 'https://github.com/Purple003/3D-Educational-Game-Interactive-Geometry-with-Unity',
       demoUrl: 'https://youtu.be/2HNeW8yBdEg',
     },
+    {
+      title: 'EduForge – Interactive Learning Platform',
+      period: '2026',
+      tags: ['Unity', 'FastAPI', 'PostgreSQL', 'MediaPipe', 'LangChain', 'XR'],
+      description:
+        'Full‑stack learning platform integrating Unity XR experiences with adaptive backend services.',
+      githubUrl: 'https://github.com/Purple003',
+      demoUrl: null,
+    },
+    {
+      title: 'PizzaRecipes (Android App)',
+      period: '2025',
+      tags: ['Java', 'Android Studio', 'DAO', 'Service', 'Adapter'],
+      description:
+        'Java Android app demonstrating clean DAO/Service/Adapter architecture for a recipe browser.',
+      githubUrl: 'https://github.com/Purple003/PizzaRecipes',
+      demoUrl: null,
+    },
   ];
 
   return (

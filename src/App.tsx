@@ -2,7 +2,6 @@ import React from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { EduForge } from './components/EduForge';
 import { SecondaryProjects } from './components/SecondaryProjects';
 import { Experience } from './components/Experience';
 import { Skills } from './components/Skills';
@@ -17,11 +16,10 @@ export const App: React.FC = () => {
         <Header />
         <main className="max-w-4xl mx-auto px-4 sm:px-6">
           <Hero />
-          <EduForge />
-          <SecondaryProjects />
-          <Skills />
-          <Experience />
           <About />
+          <SecondaryProjects />
+          <Experience />
+          <Skills />
           <Contact />
           <Footer />
         </main>

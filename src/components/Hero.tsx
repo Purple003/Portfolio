@@ -1,15 +1,8 @@
 import React from 'react';
-import { ArrowDown, FileText, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 export const Hero: React.FC = () => {
-  const handleScrollToEduforge = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const element = document.getElementById('eduforge');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+// No custom scroll handler needed
   return (
     <section className="pt-16 pb-12 sm:pt-20 sm:pb-16 border-b border-zinc-200 dark:border-zinc-800">
       <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-6 sm:gap-8">
@@ -27,24 +20,13 @@ export const Hero: React.FC = () => {
             Working at the intersection of game development, XR/immersive technology, and AI-driven education — building adaptive systems that put learners in flow.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 pt-2">
+          <div className="flex items-center gap-3 pt-2">
             <a
-              href="#eduforge"
-              onClick={handleScrollToEduforge}
+              href="#about"
               className="inline-flex items-center space-x-2 px-4 py-2 rounded text-sm font-medium bg-[var(--color-accent)] text-white hover:opacity-95 transition-opacity"
             >
-              <span>View EduForge</span>
+              <span>Scroll Down</span>
               <ArrowDown className="w-4 h-4" />
-            </a>
-
-            <a
-              href="/cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-4 py-2 rounded text-sm font-medium border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-200 hover:border-zinc-400 dark:hover:border-zinc-600 bg-transparent transition-colors"
-            >
-              <FileText className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
-              <span>Download CV</span>
             </a>
 
             <div className="flex items-center space-x-2 pl-2 border-l border-zinc-200 dark:border-zinc-800">
