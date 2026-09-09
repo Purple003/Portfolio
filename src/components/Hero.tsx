@@ -12,12 +12,12 @@ export const Hero: React.FC = () => {
               Aya Arroche
             </h1>
             <p className="text-base sm:text-lg font-medium text-[var(--color-accent)]">
-              Game Developer · XR &amp; AI-Driven Education
+               Emerging Technologies Engineer · XR Developer · AI-Driven Interactive Systems
             </p>
           </div>
 
           <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-xl">
-            Working at the intersection of game development, XR/immersive technology, and AI-driven education — building adaptive systems that put learners in flow.
+               I build immersive, adaptive experiences — from real-time XR gameplay systems to AI-integrated pipelines. Open to work across game development, immersive technology (XR/VR/AR), and AI-driven interactive systems, including mobile and web.
           </p>
 
           <div className="flex items-center gap-3 pt-2">

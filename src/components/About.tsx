@@ -24,7 +24,7 @@ export const About: React.FC = () => {
             Master&apos;s in Engineering and Emerging Technologies from ENS Marrakech (Université Cadi Ayyad), defended June 2026. Licence in Education (Informatique option) — a dual pedagogical-technical profile that shapes how I approach building for learners.
           </p>
           <p>
-            Based in Marrakech, Morocco. Available for Game Dev, XR, and interactive technology opportunities.
+            Based in Marrakech, Morocco. Open to opportunities in Game Development, XR/VR/AR, and AI-driven interactive systems.
           </p>
         </div>
 
